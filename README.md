@@ -1,8 +1,15 @@
-# Sitio Web sobre Turismo en la Provincia de Salta
+<h1>Sitio Web sobre Turismo en la Provincia de Salta</h1>
 
-Proyecto en curso para el curso de Full Stack Python.
-Grupo: 26
-Comision 23037
+<h2>Proyecto en curso para el curso de Full Stack Python.</h2>
+<h3>Grupo: 26</h3>
+<h3>Comision 23037</h3>
+<h3>Integrantes</h3>
+<ul>
+  <li>Daniela Apellido</li>
+  <li>Martin Apellido</li>
+  <li>Hernan Benitez</li>
+  <li>Nicolas Otero</li>
+</ul>
 
 
 ## Para Resolver:
