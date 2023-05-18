@@ -11,8 +11,7 @@
   <li>Nicolas Otero</li>
 </ul>
 
-
-## Para Resolver:
+<h4>Para Resolver:</h4>
 * En la pagina de inicio falta agregar contenido.
 * En la pag de Acerca De Salta hay que agregar algo para que se lea mejor el texto. Se puede agregar un fondo como el esmerilado que esta en otras paginas, o quizas cambiando la fuente, el tamaño y/o el color mejora.
 * En la pagina de City Tour hay que hacer algo parecido al texto dentro del carrusel, y tambien darle formato al texto de la pagina.
