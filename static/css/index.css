@@ -34,6 +34,103 @@ header{
     text-decoration: none;
     box-shadow: 3px 3px 5px black;
 }
+/*-------------------------- Contacto -----------------------*/
+.main-cont{ 
+    height:auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.Titulo_art{
+    text-align: left;
+    font-size: 2em;
+    margin: 0.5vh 0vw 0.1vh 1vw;
+    font-weight: 700;
+    color: rgba(19, 18, 18, 0.877);
+    animation-name:animacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh; 
+}
+.map_container{
+    width: 100%;
+    height: 60vh;
+}
+iframe{
+    
+    width: 100%;
+    margin: 0.1em;
+    height: 60vh;
+    border-radius: 1em;
+
+}
+
+.contactenos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+/*.formulario_art{
+    border-style: groove;
+    border-color: rgba(199, 197, 197, 0.904);
+    border-radius: 1em;
+}
+*/
+form{
+    display: flex;
+    justify-content: center;
+    flex-basis: 1;
+    width: 100%;
+    height:70vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+.colum1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.5vw;
+}
+.colum2{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.labels{
+    display:flex;
+    flex-direction: column;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.label_mensaje{ 
+    margin-top: 0.7vh;
+}
+.textarea{
+    height: 60vh;
+}
+label{
+    margin: 0.5em 0.3em;
+}
+input{
+    margin: 0.5em 0.3em;
+}
+textarea{
+    margin: 0.2em 0.3em;
+    width: 95%;
+    height: 40vh;
+}
+
+
+/*------------------------------------------------------------*/
+
 
 /*-------------------------- Acerca De -----------------------*/
 .main-acercade{
