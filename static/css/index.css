@@ -34,21 +34,75 @@ header{
     text-decoration: none;
     box-shadow: 3px 3px 5px black;
 }
-/*-------------------------- Contacto -----------------------*/
-.main-cont{ 
-    height:auto;
-    margin-left: 5%;
-    margin-right: 5%;
+/*-------------------------- City Tour -----------------------*/
+.main-tour{
+    display: flex;
+    flex-direction: column;
+    min-height: min-content;
+}.tour-cont{
+    width: 80%;
+    margin: 10px auto;
 }
+.banner{
+    text-align: center;
+    background-color: gray;
+    margin: 20px 0px;
+    padding: 5px 50px;
+    border-radius: 20px;
+}
+
+.tarjeta{
+    width: 80%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding-left: 15px;
+    
+    text-align: center;
+    align-items: center;
+}
+.parteI{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px;
+}
+.parteI button{
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.parteD img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+.backD{
+    display: none;
+    backface-visibility: hidden;
+}
+
+/*------------------------------------------------------------*/
+
+/*-------------------------- Contacto -----------------------*/
+/*
 .Titulo_art{
-    text-align: left;
-    font-size: 2em;
-    margin: 0.5vh 0vw 0.1vh 1vw;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5px;
     font-weight: 700;
     color: rgba(19, 18, 18, 0.877);
     animation-name:animacion;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+.contacto1{
+    display: flex;
+    justify-content: space-around;
 }
 .centrado{
     display: flex;
@@ -60,28 +114,29 @@ header{
     width: 100%;
     height: 60vh;
 }
+*/
 iframe{
     
     width: 100%;
     margin: 0.1em;
     height: 60vh;
     border-radius: 1em;
-
+    box-shadow: 0px 0px 10px black;
 }
-
+/*
 .contactenos{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
 }
-/*.formulario_art{
-    border-style: groove;
-    border-color: rgba(199, 197, 197, 0.904);
-    border-radius: 1em;
+.formulario_art{
+    width: 30%;
 }
 */
+/*
 form{
     display: flex;
     justify-content: center;
@@ -91,6 +146,8 @@ form{
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
 }
+*/
+/*
 .colum1{
     display: flex;
     flex-direction: column;
@@ -101,6 +158,8 @@ form{
     flex-direction: column;
     width: 35%;
 }
+*/
+/*
 .labels{
     display:flex;
     flex-direction: column;
@@ -127,10 +186,71 @@ textarea{
     width: 95%;
     height: 40vh;
 }
-
+*/
 
 /*------------------------------------------------------------*/
 
+/*-------------------------- Contacto2 -----------------------*/
+.main-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 50px;
+}
+.contacto-form img{
+    height: 480px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+}
+.formulario1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 20px;
+    text-align: center;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+}
+.formulario1 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.row{
+    margin: 10px;
+}
+.row input{
+    margin: 0px 10px;
+}
+
+.row2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.row2 label{
+    margin: 10px 0px;
+}
+.formulario1 form button{
+    width: 50%;
+    padding: 5px 10px;
+}
+.mapa{
+    width: 80%;
+}
+
+/*------------------------------------------------------------*/
 
 /*-------------------------- Acerca De -----------------------*/
 .main-acercade{
@@ -155,10 +275,12 @@ textarea{
 .descripcion>p{
     font-size: 1.2em;
     margin:0.3vh 1vw ;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 1em;
 }
 .contenido_art{
-    
     display:flex;
     width:100%;
     height:auto;
@@ -170,7 +292,10 @@ textarea{
     width: 50%;
     height: auto;
     margin:0.5vh 0vw 0.5vh 1vw ;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 0px 10px;
+    border-radius: 1em;
 }
 .contenido_descrip>p{
     font-size: 1.3em;
@@ -197,20 +322,40 @@ textarea{
     object-fit: cover;
     width: 95%;
     height: 60vh;
-    margin:0.5vh 1vw  ;
+    margin:0.5vh 1vw;
+    position: relative;
+}
+.contenido_img2 p{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+.actividad{
+    display: block;
+    margin: 0 auto;
+}
+.actividad:hover{
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.actividad:hover + p{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 1em;
 }
 .contenido_descrip2{
     display:flex;
     width: 95%;
     height: auto;
     margin:0.5vh 0vw 0.5vh 1vw ;
-    
-    
 }
 .contenido_descrip2>p{
     font-size: 1.3em;
-    
-    
 }
 .contenido_img2>img{
     width: 100%;
@@ -223,6 +368,7 @@ footer{
     display: block;
     background-color: rgba(128, 128, 128, 0.5);
     margin: 0;
+    bottom: 0;
 }
 .renglon1{
     font-size: 25px;
@@ -284,10 +430,6 @@ footer{
     backdrop-filter: blur(10px);
     padding: 5px;
 }
-.banner{
-    background-color: gray;
-    text-align: center;
-}
 /*Para centrar la parte de los ciruitos y su descripcion*/
 #circuitos{
     display: flex;
@@ -340,4 +482,62 @@ footer{
 
 #carouselExampleCaptions{
     margin: 30px 0px;
+}
+
+.carousel-caption{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+}
+
+
+/*-------------------------- Index -----------------------*/
+.main_index{
+    background-size: cover;
+    margin:1%;
+    padding:1em;
+}
+.main_index article{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(3px);
+}
+
+
+.index_titulo{
+    display: flex;
+    justify-content: center;
+
+}
+
+.index_titulo>h1{
+    font-size: 2em;
+    padding-bottom: 0.3em;
+    margin-bottom: 0;
+}
+
+.index_descripcion{
+    display: flex;
+    justify-content: center;
+}
+.index_descripcion>p{
+    font-size: 1.3em;
+    padding-top: 0.3em;
+    margin-top: 0;
+}
+
+.nav-index{
+    height: 30px;
+}
+.monedas{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: auto 20px 0px 0px;
+}
+.monedas p{
+    margin: 5px 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(3px);
+    padding: 3px 6px;
+    border-radius: 5px;
 }

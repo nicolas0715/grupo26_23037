@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/index.css">
+    <script src="./static/js/contacto.js"></script>
     <title>Salta | Turismo</title>
 </head>
 <body>
+    <nav class="nav-index">
+        <div class="monedas">
+            <p>Dolar Oficial: <span id="moneda1"></span></p>
+            <p>Dola Blue: <span id="moneda2"></span></p>
+        </div>
+    </nav>
     <header>
         <img class='logo-image' src="./static/images/salta.svg" alt="icono de la provincia de salta">
         <div class="linkes">
@@ -19,8 +26,29 @@
         </div>
     </header>
     <main>
-
+        <main class="main_index">
+            <article>
+                <div class="index_titulo">
+                    <h1>Bienvenido a nuestro sitio:</h1>
+                </div>
+                <div class="index_descripcion">
+                    <p>Nuestro sitio,ofrece diferentes opciones para conocer salta, y para que puedas llevarte las mejores vacaciones,recuerdos y experiencias.<br>Desde paquetes de viajes hasta el citytour, seleccionamos los mejores recorridos y paradas turisticas en donde encontraras: Cultura e historia, Maravillosos paisajes, Flora y fauna, Diversion, Aventuras y Amistades unicas. 
+                    </p>
+                </div>
+            </article>
+            <article>
+                
+                <button onclick="api()">boton api</button>
+                <div>
+                    La Temperatura actual en salta es: <span id="temp_api"></span> °C
+                </div>
+                
+            </article>
+        </main>
     </main>
+
+
+
     <footer>
         <div class="renglon1">
             <p>Conoce nuestra provincia, donde la historia y la tradición se unen para crear una experiencia única en el norte argentino.</p>

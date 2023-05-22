@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/index.css">
     <script src="./static/js/contacto.js"></script>
-    <title>Contacto</title>
+    <title>Document</title>
 </head>
 <body>
+    <nav class="nav-index">
+        <div class="monedas">
+            <p>Dolar Oficial: <span id="moneda1"></span></p>
+            <p>Dola Blue: <span id="moneda2"></span></p>
+        </div>
+    </nav>
     <header>
         <img class='logo-image' src="./static/images/salta.svg" alt="icono de la provincia de salta">
         <div class="linkes">
@@ -19,76 +25,43 @@
             <a href="contacto.html">Contacto</a>
         </div>
     </header>
-        <article class="centrado">
-            <div>
-                <h2 class="Titulo_art">Contactenos:</h2>
-                <br>
-                <br>
-            </div>
-            <div class="contactenos">
-                <div><p>Telefono:</p><p>ejemplo</p></div>
-                <div><p>Facebook:</p><a href="@ejemplo">@ejemplo</a></div>
-                <div><p>twitter:</p><a href="@ejemplo">@ejemplo</a></div>
-                <div><p>instagram:</p><a href="@ejemplo">@ejemplo</a></div>
-                <div><p>Youtube:</p><a href="@ejemplo">@ejemplo</a></div>
-            </div>
-            
-        </article>
-        <article class="formulario_art">
-            <div class="centrado">
-                <h2 class="Titulo_art">Envianos un email:</h2>
-                
-            </div>
-            <br>
-            <br>
-            <form action="" method="POST" id="form" >
-                <div class="colum1">
-                    <div class="labels">
-                        <label for="nombre">Nombre:</label>
-                        <label for="apellido">Apellido:</label>
-                        <label for="telefono">Telefono:</label>
-                        <label for="email">Email:</label>
-                    </div>
-                    <div class="label_mensaje">
-                        <label for="comentario">Comentario:</label>
-                    </div>
-                </div>
 
-                <div class="colum2">
-                    <div class="inputs">
-                        <input type="text" id="nombre">
-                        <input type="text" id="apellido">
-                        <input type="tel" id="telefono">
-                        <input type="email" id="email">
+    <main class="main-contacto">
+        <h1>Contactenos...</h1>
+        <div class="contacto-form">
+            <img id='imagenes-varias' src="./static/images/santa-rosa-tastil.jpg" onclick='cambiarImagen()' alt="Imagenes de la provincia de Salta">
+            <div class="formulario1">
+                <h2>Envianos un Email:</h2>
+                <form action="">
+                    <div class="row">
+                        <label for="">Nombre</label>
+                        <input type="text">
                     </div>
-                    <div class="textarea">
-                        <textarea id="comentario"></textarea>
+                    <div class="row">
+                        <label for="">Apellido</label>
+                        <input type="text">
                     </div>
-                    <div>
-                        <input type="submit" onclick="confirmacion()" id="submit">
-                        
+                    <div class="row">
+                        <label for="">Telefono</label>
+                        <input type="text">
                     </div>
-                </div>
-
-            </form>
-            
-        </article>
-        <main class="main-cont">
-            <article class="centrado">
-                <div>
-                    <h2 class="Titulo_art">Donde encontrarnos:</h2>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                
-                <div class="map_container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0498160821257!2d-65.41117852588165!3d-24.793747659319596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a2253a7cf7%3A0x469db8cb0bdce160!2sAv.%20San%20Mart%C3%ADn%20250%2C%20Salta!5e0!3m2!1ses!2sar!4v1684367956749!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
-                </div>
-            </article>
+                    <div class="row">
+                        <label for="">Email</label>
+                        <input type="text">
+                    </div>
+                    <div class="row2">
+                        <label for="">Comentario</label>
+                        <textarea name="" id="" cols="30" rows="6"></textarea>
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0498160821257!2d-65.41117852588165!3d-24.793747659319596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a2253a7cf7%3A0x469db8cb0bdce160!2sAv.%20San%20Mart%C3%ADn%20250%2C%20Salta!5e0!3m2!1ses!2sar!4v1684367956749!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
+
     <footer>
         <div class="renglon1">
             <p>Conoce nuestra provincia, donde la historia y la tradición se unen para crear una experiencia única en el norte argentino.</p>
