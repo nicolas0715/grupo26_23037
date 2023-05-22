@@ -28,15 +28,16 @@ function cambiarImagen() {
 }
 
 
-function api(){
+
+function api(){ // Falta terminar!!!
+    const fechaActual = new Date(); // Para obtener la hora, y buscar la temperatura segun la hora actual
     tempCont=document.querySelector('#temp_api')
     fetch('https://api.open-meteo.com/v1/forecast?latitude=-24.79&longitude=-65.41&hourly=temperature_2m')
-    .then(res=>res.json())
+    .then(res =>res.json())
     .then(data=>{
-        tempCont.innerHTML=data.hourly.temperature_2m[0]
-        console.log(data.hourly.temperature_2m[0])
-    }
-        )
+        const temperature = data.hourly.temperature_2m[0].value;
+        document.getElementById('temp_api').textContent = temperature;
+    })
 }
 
 
