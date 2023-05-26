@@ -5,8 +5,8 @@
 <h3>Comision 23037</h3>
 <h3>Integrantes</h3>
 <ul>
-  <li>Daniela Apellido</li>
-  <li>Martin Apellido</li>
+  <li>Daniela Ferrero</li>
+  <li>Martin Lazo</li>
   <li>Hernan Benitez</li>
   <li>Nicolas Otero</li>
 </ul>
