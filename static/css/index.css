@@ -1,12 +1,17 @@
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
-    background-image: url('C:/Users/otero/Desktop/Pokio/Cursos/Varios/Python - FrontEnd (BA)/Proyecto26/static/images/cafayate-1.jpg');
+    background-image:url('../images/cafayate-1.jpg');
+    background-attachment: fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
+    padding-bottom: 400px;
+    position: relative;
+    min-height: 60vh;
+    
 }
 
 header{
@@ -14,14 +19,17 @@ header{
     justify-content: space-between;
 }
 .logo-image{
-    height: 180px;
+    height: 100px;
 }
+
+
 
 .linkes{
     width: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 
 .linkes a{
@@ -51,6 +59,7 @@ header{
     border-radius: 20px;
 }
 
+
 .tarjeta1{ 
     width: 80%;
     height: auto;
@@ -61,12 +70,14 @@ header{
     
     text-align: center;
     align-items: center;
+    margin: 0 auto;
 }
 .parteI{
     width: 70%;
     display: flex;
     flex-direction: column;
-    
+    text-align: center;
+    margin: 0 auto;
     padding: 10px;
 }
 .parteI button{
@@ -369,6 +380,10 @@ footer{
     background-color: rgba(128, 128, 128, 0.5);
     margin: 0;
     bottom: 0;
+    position: absolute;
+    width: 100%;
+    
+    
 }
 .renglon1{
     font-size: 25px;
@@ -387,11 +402,12 @@ footer{
     justify-content: center;
     flex-direction: column;
     width: 40%;
+    
 }
 .enlaces a{
     margin: 8px 0px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: 600;
 }
@@ -410,6 +426,7 @@ footer{
 .contacto1{
     display: flex;
     align-items: center;
+    color: white;
 }
 
 
@@ -418,7 +435,10 @@ footer{
     width: 40%;
     display: flex;
     justify-content: space-evenly;
+    
 }
+
+
 
 
 
@@ -496,10 +516,15 @@ footer{
     background-size: cover;
     margin:1%;
     padding:1em;
+    
 }
 .main_index article{
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(3px);
+    width: 50%;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 auto;
 }
 
 
